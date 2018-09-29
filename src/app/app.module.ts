@@ -1,4 +1,11 @@
-import {MatButtonModule, MatCheckboxModule, MatCardModule, MatIconModule, MatMenuModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule,
+    MatCheckboxModule,
+    MatCardModule,
+    MatIconModule,
+    MatMenuModule,
+    MatTabsModule,
+    MatToolbarModule
+} from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
@@ -61,6 +68,7 @@ export const routerConfig: Routes = [
     MatCardModule,
     MatIconModule,
     MatMenuModule,
+    MatTabsModule,
     MatToolbarModule,
     RouterModule.forRoot(routerConfig),
     FlexLayoutModule
