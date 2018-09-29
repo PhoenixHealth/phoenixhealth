@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href /",
+    "build": "ng build --prod --base-href phoenix-medical",
     "deploy": "ngh --dir=dist/phoenix-medical",
     "test": "ng test",
     "lint": "ng lint",
