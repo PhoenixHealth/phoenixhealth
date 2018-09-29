@@ -1,0 +1,16 @@
+.nav {
+    background-color: teal;
+    border-radius: 5px;
+    mat-card-title {
+        font-size: 2em;
+    }
+}
+
+.nav-ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    button {
+        margin: 2px;
+    }
+}
