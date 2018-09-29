@@ -1,5 +1,9 @@
+$nav-background-light: #c7c7c7;
+$nav-background: #a3a3a3;
+$nav-background-shade: #818181;
+
 .nav {
-    background-color: teal;
+    background-color: $nav-background;
     border-radius: 5px;
     mat-card-title {
         font-size: 2em;
@@ -26,3 +30,10 @@
          // width: 80%;
      }
  }
+
+ .header-image {
+    background-image: url('/assets/logo.png');
+    background-size: cover;
+    background-color: $nav-background-light;
+    border: 1px solid $nav-background-shade;
+  }

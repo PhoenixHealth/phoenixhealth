@@ -1,18 +1,20 @@
 <mat-card class="nav">
     <mat-card-header>
+      <img mat-card-avatar class="header-image">
       <mat-card-title>Phoenix Medical Complex</mat-card-title>
+      <mat-card-subtitle>Your service partner for medical whatevers</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
       <ul class="nav-ul" routerLinkActive="active">
         <button mat-raised-button routerLink="home"><mat-icon>home</mat-icon> Home</button>
         <span class="fill-remaining-space"></span>
-        <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+        <div fxLayout="row" fxShow="false" fxShow.gt-xs>
           <button mat-raised-button routerLink="about">About Us</button>
           <button mat-raised-button routerLink="doctors">Our Doctors</button>
           <button mat-raised-button routerLink="services">Our Services</button>
           <button mat-raised-button routerLink="contact">Contact Us</button>
         </div>
-        <button mat-raised-button [matMenuTriggerFor]="mainMenu" fxHide="false" fxHide.gt-sm>
+        <button mat-raised-button [matMenuTriggerFor]="mainMenu" fxHide="false" fxHide.gt-xs>
           <mat-icon>menu</mat-icon>
         </button>
       </ul>
