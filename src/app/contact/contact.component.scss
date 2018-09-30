@@ -1,3 +1,39 @@
-.map {
-  width: 80%;
+@import '../../styles-mixins.scss';
+
+.contact-icon-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-icon {
+  text-align: center;
+}
+
+.contact-message {
+  font-weight: bold;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 0px) {
+  mat-icon {
+    @include md-icon-size(48px);
+  }
+}
+
+/* tablets (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px) {
+  mat-icon {
+    @include md-icon-size(72px);
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  mat-icon {
+    @include md-icon-size(88px);
+  }
 }
