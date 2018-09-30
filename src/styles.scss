@@ -1,5 +1,11 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+body {
+  background: #d3d3d3;
+}
+
 mat-card {
-    margin-bottom: 6px;
+  border-top: 2px solid #1e4eeb;
+  margin-bottom: 6px;
+  background: url(assets/scribble_light.png);
 }
