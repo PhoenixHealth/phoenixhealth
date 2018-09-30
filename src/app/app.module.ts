@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import {MatButtonModule,
     MatCheckboxModule,
     MatCardModule,
@@ -63,6 +64,8 @@ export const routerConfig: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
+    FormsModule,
     MatButtonModule,
     MatCheckboxModule,
     MatCardModule,
@@ -70,8 +73,7 @@ export const routerConfig: Routes = [
     MatMenuModule,
     MatTabsModule,
     MatToolbarModule,
-    RouterModule.forRoot(routerConfig),
-    FlexLayoutModule
+    RouterModule.forRoot(routerConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
