@@ -10,9 +10,9 @@
               <span class="fill-remaining-space"></span>
               <div fxLayout="row" fxShow="false" fxShow.gt-xs>
                 <button mat-raised-button routerLink="about">About Us</button>
-                <button mat-raised-button routerLink="doctors">Our Doctors</button>
-                <button mat-raised-button routerLink="services">Our Services</button>
                 <button mat-raised-button routerLink="contact">Contact Us</button>
+                <button mat-raised-button routerLink="services">Our Services</button>
+                <button mat-raised-button routerLink="doctors">Our Doctors</button>
               </div>
               <button mat-raised-button [matMenuTriggerFor]="mainMenu" fxHide="false" fxHide.gt-xs>
                 <mat-icon>menu</mat-icon>
@@ -23,9 +23,9 @@
 
 <mat-menu #mainMenu="matMenu" class="hidden-menu">
   <button mat-menu-item routerLink="about">About Us</button>
-  <button mat-menu-item routerLink="doctors">Our Doctors</button>
-  <button mat-menu-item routerLink="services">Our Services</button>
   <button mat-menu-item routerLink="contact">Contact Us</button>
+  <button mat-menu-item routerLink="services">Our Services</button>
+  <button mat-menu-item routerLink="doctors">Our Doctors</button>
 </mat-menu>
 
 <router-outlet></router-outlet>

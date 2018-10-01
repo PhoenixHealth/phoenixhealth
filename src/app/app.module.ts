@@ -18,7 +18,8 @@ import { AboutComponent } from './about/about.component';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
-import { ContactDetailedComponent } from './contact-detailed/contact-detailed.component';
+import { ContactDetailedComponent } from './contact-page/contact-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 export const routerConfig: Routes = [
   {
@@ -27,7 +28,7 @@ export const routerConfig: Routes = [
   },
   {
       path: 'about',
-      component: AboutComponent
+      component: AboutPageComponent
   },
   {
       path: 'doctors',
@@ -61,7 +62,8 @@ export const routerConfig: Routes = [
     DoctorsComponent,
     ServicesComponent,
     ContactComponent,
-    ContactDetailedComponent
+    ContactDetailedComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
