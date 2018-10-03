@@ -1,27 +1,36 @@
-<mat-card>
-  <mat-card-title>Contact Us</mat-card-title>
+<mat-card class="title-card">
+  <mat-card-title>
+    <div class="title-image">
+        <img src="assets/contact-title.jpg" alt="Contact Title Image">
+    </div>
+  </mat-card-title>
   <mat-card-content>
     <div class="contact-icon-row">
       <div class="contact-icon">
-        <button mat-raised-button color="primary" (click)="onCallClick()">
+        <button mat-raised-button color="primary"
+         (click)="onCallClick()"
+         matTooltip="Give us a call">
           <mat-icon>phonelink_ring</mat-icon>
           +1 876-972-1933
         </button>
-        <p class="contact-message">Give us a call</p>
       </div>
       <div class="contact-icon">
-        <button mat-raised-button color="primary" (click)="onMailClick()">
+        <button mat-raised-button 
+         color="primary" 
+         (click)="onMailClick()"
+         matTooltip="Mail us">
           <mat-icon>mail_outline</mat-icon>
           info@phoenixmedicalcenter.com
         </button>
-        <p class="contact-message">Mail us</p>
       </div>
       <div class="contact-icon">
-        <button mat-raised-button color="primary" (click)="onPositionClick()">
+        <button mat-raised-button
+         color="primary"
+         (click)="onPositionClick()"
+         matTooltip="Find our location">
           <mat-icon>location_on</mat-icon>
           65 Main Street, Saint Ann's Bay, JM
         </button> 
-        <p class="contact-message">Find our location</p>
       </div>
     </div>
     <div class="map"></div>

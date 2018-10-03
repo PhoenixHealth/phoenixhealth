@@ -5,7 +5,8 @@ import {MatButtonModule,
     MatIconModule,
     MatMenuModule,
     MatTabsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTooltipModule
 } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -17,8 +18,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { ServicesComponent } from './services/services.component';
-import { ContactComponent } from './contact/contact.component';
-import { ContactDetailedComponent } from './contact-page/contact-page.component';
+import { ContactTitleComponent } from './contact-title/contact-title.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 
 export const routerConfig: Routes = [
@@ -40,7 +41,7 @@ export const routerConfig: Routes = [
   },
   {
       path: 'contact',
-      component: ContactDetailedComponent
+      component: ContactPageComponent
   },
   {
       path: '',
@@ -61,8 +62,8 @@ export const routerConfig: Routes = [
     AboutComponent,
     DoctorsComponent,
     ServicesComponent,
-    ContactComponent,
-    ContactDetailedComponent,
+    ContactTitleComponent,
+    ContactPageComponent,
     AboutPageComponent
   ],
   imports: [
@@ -77,6 +78,7 @@ export const routerConfig: Routes = [
     MatMenuModule,
     MatTabsModule,
     MatToolbarModule,
+    MatTooltipModule,
     RouterModule.forRoot(routerConfig)
   ],
   providers: [],

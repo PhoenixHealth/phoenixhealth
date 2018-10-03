@@ -8,3 +8,22 @@ mat-card {
   border-top: 2px solid #1e4eeb;
   margin-bottom: 6px;
 }
+
+.title-card {
+  padding: 0px !important;
+  padding-bottom: 24px !important;
+  mat-card-title {
+    .title-image{ 
+      img  {      width: 100%;
+      height: auto;
+      }
+    }
+  }
+  mat-card-content {
+
+  }
+}
+
+.mat-tooltip {
+  font-size: 18px;
+}
