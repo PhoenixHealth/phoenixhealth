@@ -12,10 +12,12 @@ $nav-background-shade: #1e2ceb;
   padding: 6px !important;
   mat-card-title {
     font-size: 2em;
+    font-weight: bold;
     color: $nav-background-shade
   }
   mat-card-subtitle {
     color: $nav-background-light;
+    font-weight: bold;
   }
 }
 

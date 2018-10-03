@@ -13,6 +13,10 @@ export class ContactTitleComponent implements OnInit {
 
   constructor(private router: Router) {}
 
+  onContactTitleClick() {
+    this.router.navigate(['../contact']);
+  }
+
   onCallClick() {
     location.href = 'tel:+1 876-972-1933';
   }
