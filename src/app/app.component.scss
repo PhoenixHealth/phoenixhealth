@@ -1,13 +1,18 @@
 $nav-background-light: rgba(255,255,255,0.6);
 $nav-background: #0c71c3;
-$nav-background-shade: #1e4eeb;
+$nav-background-shade: #1e2ceb;
 
 .nav {
   background-color: $nav-background;
-  border-radius: 5px;
+  border-radius: 0px;
+  margin: 0px;
+  border-top: 0px;
+  border-bottom: 1px solid black;
+  margin-bottom: -4px;
+  padding: 6px !important;
   mat-card-title {
     font-size: 2em;
-    color: $nav-background-light
+    color: $nav-background-shade
   }
   mat-card-subtitle {
     color: $nav-background-light;

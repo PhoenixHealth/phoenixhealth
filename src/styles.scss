@@ -2,11 +2,13 @@
 
 body {
   background: #d3d3d3;
+  margin: 0px;
 }
 
 mat-card {
   border-top: 2px solid #1e4eeb;
   margin-bottom: 6px;
+  margin: 8px;
 }
 
 .title-card {
@@ -14,8 +16,9 @@ mat-card {
   padding-bottom: 24px !important;
   mat-card-title {
     .title-image{ 
-      img  {      width: 100%;
-      height: auto;
+      img  {      
+        width: 100%;
+        height: auto;
       }
     }
   }
