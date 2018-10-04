@@ -15,12 +15,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { DoctorsComponent } from './doctors/doctors.component';
-import { ServicesComponent } from './services/services.component';
-import { ContactTitleComponent } from './contact-title/contact-title.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { AboutTitleComponent } from './about-title/about-title.component';
+import { ServicesComponent } from './services/services.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ContactTitleComponent } from './contact-title/contact-title.component';
+import { DoctorsPageComponent } from './doctors-page/doctors-page.component';
+import { DoctorsTitleComponent } from './doctors-title/doctors-title.component';
 
 export const routerConfig: Routes = [
   {
@@ -33,7 +34,7 @@ export const routerConfig: Routes = [
   },
   {
       path: 'doctors',
-      component: DoctorsComponent
+      component: DoctorsPageComponent
   },
   {
       path: 'services',
@@ -59,12 +60,13 @@ export const routerConfig: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
-    DoctorsComponent,
+    AboutTitleComponent,
+    DoctorsTitleComponent,
     ServicesComponent,
     ContactTitleComponent,
     ContactPageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    DoctorsPageComponent
   ],
   imports: [
     BrowserModule,

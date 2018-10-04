@@ -1,5 +1,11 @@
-<mat-card>
-  <mat-card-title>Our Doctors</mat-card-title>
+<mat-card class="title-card">
+  <mat-card-title>
+    <div class="title-image">
+        <img src="assets/eye.jpg" alt="Doctors Title Image">
+    </div>
+    <button mat-raised-button (click)="onDoctorsTitleClick()">Our Doctors</button>
+  </mat-card-title>
+  <mat-card-content>
   <mat-tab-group>
 
     <mat-tab label="Dr. Maynard D. McIntosh">
@@ -104,4 +110,5 @@
     </mat-tab>
 
   </mat-tab-group>
+</mat-card-content>
 </mat-card>
