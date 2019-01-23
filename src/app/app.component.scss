@@ -1,15 +1,19 @@
 $nav-background-light: rgba(255,255,255,0.6);
-$nav-background: #0c71c3;
+$nav-background: rgba(69 ,51, 230, 1);
 $nav-background-shade: #1e2ceb;
 
 .nav {
   background-color: $nav-background;
-  border-radius: 0px;
-  margin: 0px;
-  border-top: 0px;
+  border-radius: 0;
+  margin: 0;
+  border: 0;
   border-bottom: 1px solid black;
-  margin-bottom: -4px;
   padding: 6px !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   mat-card-title {
     font-size: 2em;
     font-weight: bold;
@@ -41,4 +45,12 @@ $nav-background-shade: #1e2ceb;
   background-size: cover;
   background-color: $nav-background-light;
   border: 1px solid $nav-background-shade;
+}
+
+.main-title {
+  color: white !important;
+}
+
+.header-spacing {
+  height: 130px;
 }

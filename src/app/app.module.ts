@@ -18,7 +18,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { AboutTitleComponent } from './about-title/about-title.component';
-import { ServicesComponent } from './services/services.component';
+import { ServicesPageComponent } from './services-page/services-page.component';
+import { ServicesTitleComponent } from './services-title/services-title.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ContactTitleComponent } from './contact-title/contact-title.component';
 import { DoctorsPageComponent } from './doctors-page/doctors-page.component';
@@ -39,7 +40,7 @@ export const routerConfig: Routes = [
   },
   {
       path: 'services',
-      component: ServicesComponent
+      component: ServicesPageComponent
   },
   {
       path: 'contact',
@@ -63,11 +64,12 @@ export const routerConfig: Routes = [
     HomeComponent,
     AboutTitleComponent,
     DoctorsTitleComponent,
-    ServicesComponent,
     ContactTitleComponent,
     ContactPageComponent,
     AboutPageComponent,
-    DoctorsPageComponent
+    DoctorsPageComponent,
+    ServicesPageComponent,
+    ServicesTitleComponent
   ],
   imports: [
     BrowserModule,

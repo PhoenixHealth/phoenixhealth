@@ -22,7 +22,7 @@ export class ContactTitleComponent implements OnInit {
   }
 
   onMailClick() {
-    location.href = 'mailto:xyz@abc.com';
+    location.href = 'mailto:info@phoenixhealthcomplex.com';
     // window.open('mailto:info@phoenixmedicalcenter.com');
   }
 
