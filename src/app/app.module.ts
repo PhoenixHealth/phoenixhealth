@@ -22,8 +22,6 @@ import { ServicesPageComponent } from './services-page/services-page.component';
 import { ServicesTitleComponent } from './services-title/services-title.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ContactTitleComponent } from './contact-title/contact-title.component';
-import { DoctorsPageComponent } from './doctors-page/doctors-page.component';
-import { DoctorsTitleComponent } from './doctors-title/doctors-title.component';
 
 export const routerConfig: Routes = [
   {
@@ -33,10 +31,6 @@ export const routerConfig: Routes = [
   {
       path: 'about',
       component: AboutPageComponent
-  },
-  {
-      path: 'doctors',
-      component: DoctorsPageComponent
   },
   {
       path: 'services',
@@ -63,11 +57,9 @@ export const routerConfig: Routes = [
     AppComponent,
     HomeComponent,
     AboutTitleComponent,
-    DoctorsTitleComponent,
     ContactTitleComponent,
     ContactPageComponent,
     AboutPageComponent,
-    DoctorsPageComponent,
     ServicesPageComponent,
     ServicesTitleComponent
   ],
