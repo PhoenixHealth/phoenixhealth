@@ -1,9 +1,13 @@
 $nav-background-light: rgba(255,255,255,0.6);
-$nav-background: rgba(69 ,51, 230, 1);
 $nav-background-shade: #1e2ceb;
+$logo-color-top: #0058A1;
+$logo-color-bot: #0076BB;
+$logo-width: 200px;
 
 .nav {
-  background-color: $nav-background;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$logo-color-top, endColorstr=$logo-color-bot);
+  background: -webkit-gradient(linear, top, bottom, from($logo-color-top), to($logo-color-bot));
+  background: -moz-linear-gradient(top,  $logo-color-top,  $logo-color-bot);
   border-radius: 0;
   margin: 0;
   border: 0;
@@ -14,7 +18,7 @@ $nav-background-shade: #1e2ceb;
   left: 0;
   right: 0;
   z-index: 100;
-  mat-card-title {
+  .main-title {
     font-size: 2em;
     font-weight: bold;
     color: $nav-background-shade
@@ -40,17 +44,44 @@ $nav-background-shade: #1e2ceb;
   flex: 1 1 auto;
 }
 
-.header-image {
-  background-image: url('/assets/logo.png');
-  background-size: cover;
-  background-color: $nav-background-light;
-  border: 1px solid $nav-background-shade;
-}
-
 .main-title {
   color: white !important;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .header-spacing {
   height: 130px;
+}
+
+.phoenix {
+  background-color: #FF6900;
+  border-radius: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.healthcomplex {
+  font-size: 22px;
+  margin-top: -2px;
+  margin-bottom: -2px;
+  width: 174px !important;
+}
+
+.logo-title {
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.logo {
+  width: $logo-width;
+  float: left;
+}
+
+.subtitle {   
+  display: inline-block;
+  bottom: 45px;
+  position: absolute;
+  font-size: 16px;
 }
