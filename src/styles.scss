@@ -34,3 +34,8 @@ mat-card {
 .mat-tooltip {
   font-size: 18px;
 }
+
+.mat-line {
+  overflow: auto !important;
+  white-space: normal !important;
+}
