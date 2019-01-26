@@ -16,6 +16,12 @@
       }
 }
 
+@media (max-width: 360px) {
+    .mat-list-item {
+        height: 170px !important;
+      }
+}
+
 @media (max-width: 320px) {
     .mat-list-item {
         height: 220px !important;
