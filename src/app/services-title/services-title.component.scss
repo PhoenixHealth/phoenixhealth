@@ -1,0 +1,23 @@
+@media (max-width: 630px) {
+    .mat-list-item {
+        height: 100px !important;
+      }
+}
+
+@media (max-width: 460px) {
+    .mat-list-item {
+        height: 120px !important;
+      }
+}
+
+@media (max-width: 400px) {
+    .mat-list-item {
+        height: 140px !important;
+      }
+}
+
+@media (max-width: 320px) {
+    .mat-list-item {
+        height: 220px !important;
+      }
+}
